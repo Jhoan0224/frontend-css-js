@@ -5,6 +5,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family:'Segoe UI', Arial, sans-serif;
+    background-color: #f0f7ff;
+    margin: 0;
 }
 
 .banner-home {
@@ -18,4 +20,17 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.banner-home h2 {
+    position: absolute;
+    color: white;
+    font-size: 3.2rem;
+    top: 15rem;
+    left: 7rem;
+}
+
+.title-1 {
+    font-size: 1.8rem;
+    text-align: center;
 }
