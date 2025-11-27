@@ -60,7 +60,36 @@ body {
     color: rgb(0, 108, 232);
 }
 
+
+/* CSS Clocks */
+.digital-clock button {
+    font-size: medium;
+    padding: 0.8rem;
+    background-color: greenyellow;
+    border-radius: 1rem;
+}
+.nav-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.nav-clock p {
+    font-weight: 500;
+}
+.time-dclock {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.time-dclock p {
+    font-size: 5rem;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+
 .my-nav-home {
     display: block;
     background-color: blue;
+
 }
