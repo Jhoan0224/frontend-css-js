@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Timer with CSS and JS</title>
+</head>
+<body>
+    <navbar-home></navbar-home>
+
+    <div class="container digital-clock">
+        <div class="nav-clock">
+            <h4>The DClock</h4>
+            <p>This is the  first Excercise</p>
+            <button>Start clock</button>
+        </div>
+        <div class="insert-data-clock">
+            <div class="form-1">
+                <p>Insert data for <br> the Timer:</p>
+                <div class="" style="display: flex; gap: 2rem">
+                    <div class="input-col">
+                        <label for="numHoras">Horas</label>
+                        <input type="number" name="numHoras" id="numHoras">
+                    </div>
+                    <div class="input-col">
+                        <label for="numMinutes">Minutos</label>
+                        <input type="number" name="numMinutes" id="numMinutes">
+                    </div>
+                    <div class="input-col">
+                        <label for="numSeconds">Seconds</label>
+                        <input type="number" name="numSeconds" id="numSeconds">
+                    </div>
+                </div>
+                    <div>
+                        <button id="btnRunTimer" class="btn-start-clock">Start Timer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="time-dclock">
+            <div>
+                <p id="hour">hh:</p>
+            </div>
+            <div>
+                <p id="minute">mm:</p>
+            </div>
+            <div>
+                <p id="second">ss</p>
+            </div>
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div class="btn-section-clock">
+            <button id="btnPauseTimer" class="btn-reset-clock">Pausar</button>
+            <button id="btnResetTimer" class="btn-stop-clock">Reiniciar</button>
+            <button id="btnContinueTimer" class="btn-continue-clock">Continue</button>
+        </div>
+    </div>
+
+    <script src="../js/home-tmpl.js"></script>
+    <script src="../js/timer.js" onload="new TheTimer()"></script>
+</body>
+</html>

@@ -9,9 +9,39 @@ body {
     margin: 0%;
 }
 
+.navbar-tmpl {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+.navbar-tmpl img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.navbar-tmpl a {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    font-size: clamp(1.8rem, 2vw, 2.5rem);
+    text-decoration: none;
+    font-weight: 500;
+    color: azure;
+    background-color: rgba(68, 147, 251, 0.349);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.navbar-tmpl a:hover {
+    background-color: rgb(15, 113, 240);
+}
+
 .container {
     padding-left: 5%;
     padding-right: 5%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .banner-home {
@@ -60,19 +90,60 @@ body {
     color: rgb(0, 108, 232);
 }
 
+.input-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1 {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.form-1 label {
+    margin-bottom: 0.5rem;
+}
+.form-1 input {
+    padding: 0.8rem;
+    border-radius: 1rem;
+    width: 8ch;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
 
 /* CSS Clocks */
-.digital-clock button {
+.btn-start-clock  {
     font-size: medium;
     padding: 0.8rem;
     background-color: greenyellow;
     border-radius: 1rem;
 }
+.btn-reset-clock  {
+    font-size: medium;
+    padding: 0.8rem;
+    background-color: rgb(255, 245, 47);
+    border-radius: 1rem;
+}
+.btn-continue-clock {
+    display: none;
+}
+
+.btn-stop-clock  {
+    font-size: medium;
+    padding: 0.8rem;
+    background-color: rgb(255, 82, 82);
+    border-radius: 1rem;
+
+}
 .nav-clock {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5%;
 }
 .nav-clock p {
     font-weight: 500;
@@ -86,6 +157,26 @@ body {
     font-size: 5rem;
     font-family: Consolas, "Courier New", monospace;
 }
+
+.insert-data-clock {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.insert-data-clock p {
+    font-family: Consolas, "Courier New", monospace;
+    font-weight: 600;
+}
+
+.btn-section-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 
 
 .my-nav-home {

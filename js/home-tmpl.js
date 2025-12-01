@@ -1,4 +1,5 @@
 
+
 class NavbarHome extends HTMLElement{
     constructor() {
         super();
@@ -7,7 +8,9 @@ class NavbarHome extends HTMLElement{
     
     connectedCallback() {
         this.innerHTML = `
-            <div>
+            <div class="navbar-tmpl">
+                <a href="/index.html" class="btn-go-home">Go to Home</a>
+                <img src="../media/moon-navbar.jpg" />
                 Poner reloj acqui
             </div>
         `;
